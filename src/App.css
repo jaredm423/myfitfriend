@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Nav-bar{
+    min-height: 5vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .Home-btn, .Meals-btn, .Weight-btn, .Exercise-btn{
+    font-size: 1.5vh;
+    color: #28342c;
+    width: 30vh;
+    border: none;
+    outline: none;
   }
-}
+  .Home-btn:hover, .Meals-btn:hover, .Weight-btn:hover, .Exercise-btn:hover{
+    color: white;
+    background-color: #28342c;
+  }
+  .WelcomeMsg {
+    background-color: #28342c;
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .Newsfeed{
+    color: #28342c;
+    background-color: white;
+  }
+  .Newsfeed-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .Calorie-widget, .Weight-widget, .Macros-widget{
+    color: white;
+    background-color: #28342c;
+    height: 40vh;
+    min-width: 33vh;
+    display:inline;
+  }
+  .Calories-chart, .Macros-chart{
+    height: 25vh;
+    width: 30vw;
+    margin-left: 1vh;
+  }
+  /*Meals tab*/
+  .Food-Search-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .Food-Search-Form{
+    border: 1px solid #28342c;
+    width: 33vw;
+  }
+  .Food-Search-Results{
+    border: 1px solid #28342c;
+    width: 33vw;
+    height: 30vh;
+  }
+  .Food-Search-Items:hover{
+    color: white;
+    background-color: #28342c;
+  }
+  .Nutrition-Facts-Meal-List-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .Nutrition-Facts-Div{
+    width: 33vw;
+    padding-top: 3vh;
+    border: 1px solid #28342c;
+  }
+  .Meal-List{
+    width: 33vw;
+    min-height: 30vh;
+    border: 1px solid #28342c;
+  }
+  .Newsfeed-Container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .Calories-chart-2, .Macros-chart-2{
+    height: 33vh;
+    width: 33vw;
+    border: 1px solid #28342c;
+
+  }
+  /*Weight Tab*/
+  .Weight-Content-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Weight-widget-Main{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    background-color: #28342c;
+    height: 40vh;
+  }
+  .Weight-submit-form button{
+    color: white;
+    background-color: #28342c;
+  }
+  
